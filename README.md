@@ -15,6 +15,7 @@ The goal is to predict the next item a user will buy based on their purchase his
 1. Clone the repo:
    ```bash
    git clone [[https://github.com/YourUsername/Your-Repo-Name.git]](https://github.com/lily010203/IR_Final_Report)
+   ```
 2.Install dependencies:
    pip install -r requirements.txt
 3.Dataset Setup:
