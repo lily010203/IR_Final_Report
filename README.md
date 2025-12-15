@@ -12,20 +12,20 @@ The goal is to predict the next item a user will buy based on their purchase his
 - **Hugging Face Account:** You need an access token to use the Inference API.
 
 ### Installation
-1. Clone the repo:
+1. **Clone the repo:**
    ```bash
    git clone https://github.com/lily010203/IR_Final_Report.git
    ```
-2.Install dependencies:
+2. **Install dependencies:**
    pip install -r requirements.txt
-3.Dataset Setup:
+3. **Dataset Setup:**
    Download the [Instacart Dataset](https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset).
    Unzip orders.csv, products.csv, and order_products__prior.csv.
    Place them into a folder named instacart/ in the root directory of this project.
 
 ### Usage
-1.Configure Token: Open LLM_version2.py and replace the placeholder string with your actual Hugging Face Access Token:
+1. Configure Token: Open LLM_version2.py and replace the placeholder string with your actual Hugging Face Access Token:
    MY_HF_TOKEN = "hf_xxxxxxxxxxxxxxxxxxxx"
-2.Run the experiment:
+2. Run the experiment:
    python LLM_version2.py
 ### Hyperparameters
