@@ -61,5 +61,3 @@ We use **Recall@10** as the primary evaluation metric.
 | **Cold-Start** (<5 orders) | 0.036 | **0.140** | **+288% (3.8x)** |
 | **Warm** (5-20 orders) | 0.014 | **0.140** | **+900% (10x)** |
 | **Active** (>20 orders) | 0.0004 | **0.080** | **+19900% (200x)** |
-
-Full evaluation logs can be found in `evaluation_results.csv`.
