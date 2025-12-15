@@ -17,7 +17,9 @@ The goal is to predict the next item a user will buy based on their purchase his
    git clone https://github.com/lily010203/IR_Final_Report.git
    ```
 2. **Install dependencies:**
+   ```bash
    pip install -r requirements.txt
+    ```
 3. **Dataset Setup:**
    Download the [Instacart Dataset](https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset).
    Unzip orders.csv, products.csv, and order_products__prior.csv.
@@ -25,7 +27,18 @@ The goal is to predict the next item a user will buy based on their purchase his
 
 ### Usage
 1. Configure Token: Open LLM_version2.py and replace the placeholder string with your actual Hugging Face Access Token:
+   ```bash
    MY_HF_TOKEN = "hf_xxxxxxxxxxxxxxxxxxxx"
+   ```
 2. Run the experiment:
+   ```bash
    python LLM_version2.py
+   ```
 ### Hyperparameters
+   Parameter,Value,Description
+   Model,Qwen-2.5-7B-Instruct,LLM used for zero-shot inference
+   Top-K,10,Number of recommendations generated
+   Sample Size,150 (50 per group),Total users evaluated for balance
+   Context Length,Last 10 items,History window size
+   Strategy,Candidate Constraints,User History + Top-50 Popular Items
+   Retry Logic,Exponential Backoff,"Max 5 retries (2s, 4s, 8s, 16s, 32s)"
