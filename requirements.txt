@@ -1,4 +1,7 @@
+torch
+torchvision
+sentence-transformers
+scikit-learn
 pandas
 numpy
 tqdm
-huggingface_hub
