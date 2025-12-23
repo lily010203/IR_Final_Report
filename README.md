@@ -1,4 +1,5 @@
 # IR_Final_Report
+notice: 我們有另一個分支SASRec-Transformer，結果更優異，請參考
 
 # LLM-based Session-Based Recommendation for Instacart
 
