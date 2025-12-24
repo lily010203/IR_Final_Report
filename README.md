@@ -1,4 +1,4 @@
-# Dense + SASRec Recommendation System (Instacart)
+<img width="121" height="81" alt="image" src="https://github.com/user-attachments/assets/747d28d4-0bc2-4780-ba95-4ff52171b8b8" /># Dense + SASRec Recommendation System (Instacart)
 
 This repository contains an implementation of a **next-item recommendation system** using a hybrid approach:
 - Dense Retrieval (Sentence-BERT)
@@ -151,23 +151,13 @@ python team12_DS2.py
 
 ## 8. Evaluation Output
 
-The script prints Recall@K and NDCG@K for different user groups.
+The script prints Recall@K and NDCG@K for different user groups.(K=10)
 
-Grup	K	Recall@K	NDCG@K
-Active	5	0.152	0.05880
-        10	0.20 	0.05781
-        20	0.252	0.05737
-
-
-Grup	K	Recall@K	NDCG@K
-Warm	5	0.224	0.08666
-        10	0.242 	0.06995
-        20	0.254	0.05783
-
-Grup	K	Recall@K	NDCG@K
-Warm	5	0.224	0.08666
-        10	0.242 	0.06995
-        20	0.254	0.05783
+| Grup | Recall@10 | NDCG@10 |
+| :--- | :--- | :--- |
+| **Cold** | 0.482 | 0.13933 |
+| **Warm** | 0.242 | 0.06995 |
+| **Active** |0.20 | 0.05781 |
 
 ---
 
